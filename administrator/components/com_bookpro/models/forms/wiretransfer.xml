@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fieldset addfieldpath="/administrator/components/com_bookpro/elements">	
+	<fields>
+
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+
+			readonly="true"/>							
+		
+															
+		<field
+			id="grand_total"
+			name="grand_total"
+			type="text"
+
+			label="COM_BOOKPRO_GRAND_TOTAL"
+			description="COM_BOOKPRO_GRAND_TOTAL"
+			class="inputbox"
+			size="40"/>		
+            
+            <field
+			id="total_agent"
+			name="total_agent"
+			type="text"
+
+			label="COM_BOOKPRO_TOTAL_AGENT"
+			description="COM_BOOKPRO_TOTAL_AGENT"
+			class="inputbox"
+			size="40"/>		
+            
+            
+            <field
+			id="total_partner"
+			name="total_partner"
+			type="text"
+
+			label="COM_BOOKPRO_TOTAL_PARTNER"
+			description="COM_BOOKPRO_TOTAL_PARTNER"
+			class="inputbox"
+			size="40"/>						
+								
+													
+						
+		<field
+			id="wire_id"
+			name="wire_id"
+			type="text"
+			required="false"
+			label="COM_BOOKPRO_WIRE_ID"
+			description="COM_BOOKPRO_WIRE_ID"
+			class="inputbox"
+			size="40"/>	
+						
+							
+		<field
+			id="company_id"
+			name="company_id"
+			type="agent"
+			required="false"
+			label="COM_BOOKPRO_COMPANY_ID"
+			description="COM_BOOKPRO_COMPANY_ID"
+			class="inputbox"
+			size="40"/>		
+		<field
+			id="company_name"
+			name="company_name"
+			type="text"
+			required="false"
+			label="COM_BOOKPRO_COMPANY_NAME"
+			description="COM_BOOKPRO_COMPANY_NAME"
+			class="inputbox"
+			size="40"/>	
+		
+            
+         <field name="wire_status" type="list" label="COM_BOOKPRO_WIRE_STATUS"
+			description="COM_BOOKPRO_WIRE_STATUS" class="inputbox  small"
+			 default="Wired">
+			<option value="wired">COM_BOOKPRO_WIRE_STATUS_WIRED</option>
+			<option value="processing">COM_BOOKPRO_WIRE_STATUS_PROCESSING</option>
+            <option value="block">COM_BOOKPRO_WIRE_STATUS_BLOCK</option>
+		</field>   
+            
+		<field
+			id="payment_date"
+			name="payment_date"
+			type="calendar"
+			required="false"
+			label="COM_BOOKPRO_PAYMENT_DATE"
+			description="COM_BOOKPRO_PAYMENT_DATE"
+			class="inputbox"
+			size="16"
+			format="%Y-%m-%d"/>		
+		<field
+			id="wire_transfer_date"
+			name="wire_transfer_date"
+			type="calendar"
+			required="false"
+			label="COM_BOOKPRO_WIRE_TRANSFER_DATE"
+			description="COM_BOOKPRO_WIRE_TRANSFER_DATE"
+			class="inputbox"
+			size="16"
+			format="%Y-%m-%d"/>	
+            
+            <field
+			id="create_date"
+			name="create_date"
+			type="calendar"
+			readonly="readonly"
+			required="false"
+			label="COM_BOOKPRO_CREATE_DATE"
+			description="COM_BOOKPRO_CREATE_DATE"
+			class="inputbox"
+			size="16"
+			format="%Y-%m-%d"/>	
+            
+            <field
+			id="lastupdate_date"
+			name="lastupdate_date"
+			type="calendar"
+			required="false"
+			readonly="readonly"
+			label="COM_BOOKPRO_LASTUPDATE_DATE"
+			description="COM_BOOKPRO_LASTUPDATE_DATE"
+			class="inputbox"
+			size="16"
+			format="%Y-%m-%d"/>	
+																
+		
+								
+	</fields>	
+</fieldset>		
+</form>	

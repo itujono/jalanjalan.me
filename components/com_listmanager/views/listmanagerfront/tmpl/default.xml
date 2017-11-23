@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List Manager" >
+		<message>
+			<![CDATA[List Manager component Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>List Manager data section</name>
+		<description>List Manager data section</description>		
+		
+		<fields name="params">
+		<fieldset name="params" label="Basic">
+		
+    <field name="moduleclass_sfx" type="text" default="" label="LM_MCS" description="LM_MCS_DESC"></field>
+    <field name="prefsids" type="sql" default="-1" label="LM_SELECT_LISTING" description="LM_SELECT_LISTING_DESC" query="SELECT id, name as title FROM #__listmanager_listing union select concat('v_',id), concat('List ( ',(select l.name from #__listmanager_listing l where l.id=v.idlisting) ,' ) -> View: ',v.name) as title from #__listmanager_view v" key_field="id" value_field="title" />
+    <field name="items_view" type="text" default="10" label="LM_ITERMS_PER_PAGE" description="LM_ITERMS_PER_PAGE_DESC"></field>    
+    
+    <!-- 
+    <field name="order_by" type="text" default="" label="LM_ORDER" description="LM_ORDER_DESC"></field>
+    <field name="order_by_sort" type="list" default="false" label="LM_SORT_ORDER" description="LM_SORT_ORDER_DESC">
+    	<option value="asc">LM_ASC</option>
+      	<option value="desc">LM_DESC</option>
+    </field>
+     -->
+    <field name="viewonly" type="list" default="0" label="LM_CHANGES" description="LM_CHANGES_DESC">
+      <option value="0">LM_YES</option>
+      <option value="1">LM_NO</option>
+    </field>
+    
+    <field name="autofilter" type="list" default="0" label="LM_AUTOFILTER" description="LM_AUTOFILTER_DESC">
+      <option value="0">LM_STATIC</option>
+      <option value="1">LM_DYNAMIC</option>
+    </field>
+    
+    
+    <field name="access_type" type="list" default="0" label="LM_ACCESS_CONTROL" description="LM_ACCESS_CONTROL_DESC">
+      <option value="0">LM_FULL</option>
+      <option value="1">LM_USER_RECORDS</option>
+      <option value="2">LM_USER_RECORDS_AE</option>
+    </field>
+     
+      </fieldset>
+      
+      <fieldset name="VIEW" addfieldpath="/modules/mod_listmanagersp/element">
+    <field name="theme" type="list" default="default" label="LM_THEME" description="LM_THEME_DESC">
+      <option value="default">LM_THEME_DEFAULT</option>
+      <option value="blue">LM_THEME_BLUE</option>
+      <option value="lightblue">LM_THEME_LIGHT_BLUE</option>
+      <option value="darkblue">LM_THEME_DARK_BLUE</option>
+      <option value="green">LM_THEME_GREEN</option>      
+      <option value="darkgreen">LM_THEME_DARK_GREEN</option>
+      <option value="red">LM_THEME_RED</option>
+      <option value="lightred">LM_THEME_LIGHT_RED</option>
+      <option value="darkred">LM_THEME_DARK_RED</option>
+      <option value="gray">LM_THEME_GRAY</option>
+      <option value="lightgray">LM_THEME_LIGHT_GRAY</option>
+      <option value="darkgray">LM_THEME_DARK_GRAY</option>
+      <option value="yellow">LM_THEME_YELLOW</option>
+      <option value="lightyellow">LM_THEME_LIGHT_YELLOW</option>
+      <option value="darkyellow">LM_THEME_DARK_YELLOW</option>
+      <option value="orange">LM_THEME_ORANGE</option>
+      <option value="lightorange">LM_THEME_LIGHT_ORANGE</option>
+      <option value="purple">LM_THEME_PURPLE</option>
+    </field>
+    
+    <field type="spacer" name="spacer0" hr="true" />
+    <field name="table_striped" type="checkbox" label="LM_TABLE_STRIPED" description="LM_TABLE_STRIPED_DESC" value="table-striped" default="" />
+    <field name="table_bordered" type="checkbox" label="LM_TABLE_BORDERED" description="LM_TABLE_BORDERED_DESC" value="table-bordered" default="" />
+    <field name="table_hover" type="checkbox" label="LM_TABLE_HOVER" description="LM_TABLE_HOVER_DESC" value="table-hover" default="" />
+    <field name="table_condensed" type="checkbox" label="LM_TABLE_CONDENSED" description="LM_TABLE_CONDENSED_DESC" value="table-condensed" default="" />
+     <field type="spacer" name="spacer1" hr="true" />
+      
+    <field name="show_effects" type="list" default="1" label="LM_SHOW_ANIMATION" description="LM_SHOW_ANIMATION_DESC">
+      <option value="0">LM_NO</option>
+      <option value="1">LM_YES</option>
+    </field>
+    
+    <field name="show_totals" type="list" default="0" label="LM_SHOW_TOTALS" description="LM_SHOW_TOTALS_DESC">
+      <option value="0">LM_NO</option>
+      <option value="1">LM_YES</option>
+    </field>
+
+    <field name="fullexport" type="list" default="0" label="LM_FULL_EXPORT" description="LM_FULL_EXPORT_DESC">
+      <option value="0">LM_NO</option>
+      <option value="1">LM_YES</option>
+    </field>
+    <field name="showexcel" type="list" default="1" label="LM_EXCEL_EXPORT" description="LM_EXCEL_EXPORT_DESC">
+      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    <field name="showexcelfiltered" type="list" default="1" label="LM_EXCEL_EXPORT_FILTERED" description="LM_EXCEL_EXPORT_FILTERED_DESC">
+      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    
+    <field name="showpdf" type="list" default="1" label="LM_PDF_EXPORT" description="LM_PDF_EXPORT_DESC">      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    <field name="showpdffiltered" type="list" default="1" label="LM_PDF_EXPORT_FILTERED" description="LM_PDF_EXPORT_FILTERED_DESC">      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    
+    <field name="showrtf" type="list" default="0" label="LM_RTF_EXPORT" description="LM_RTF_EXPORT_DESC">      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    <field name="showrtffiltered" type="list" default="0" label="LM_RTF_EXPORT_FILTERED" description="LM_RTF_EXPORT_FILTERED_DESC">      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    
+    <field name="showemail" type="list" default="1" label="LM_EMAIL" description="LM_EMAIL_DESC">
+      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    <field name="showemailfiltered" type="list" default="1" label="LM_EMAIL_FILTERED" description="LM_EMAIL_FILTERED_DESC">
+      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    
+     <field name="showprintform" type="list" default="0" label="LM_PRINT_FORM_FILTERED" description="LM_PRINT_FORM_DESC">      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    
+    <field name="showprintdetail" type="list" default="0" label="LM_PRINT_DETAIL_FILTERED" description="LM_PRINT_DETAIL_DESC">      
+      <option value="1">LM_YES</option>
+      <option value="0">LM_NO</option>
+    </field>
+    
+    
+    
+    
+		</fieldset>
+		<fieldset name="SEARCH" addfieldpath="/modules/mod_listmanagersp/element">
+		<field name="searchable" type="list" default="0" label="LM_SEARCHABLE" description="LM_SEARCHABLE_DESC">
+      <option value="0">LM_NO</option>
+      <option value="1">LM_YES</option>
+    </field>
+    
+    
+    <field name="link_search" type="text" default="" label="LM_SEARCH_LINK" description="LM_SEARCH_LINK_DESC"></field>
+    </fieldset>
+		</fields>
+
+
+	</state>
+</metadata>
+

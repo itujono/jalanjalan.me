@@ -1,0 +1,27 @@
+<patTemplate:tmpl name="pageoutput" unusedvars="strip">
+<style type="text/css">
+.fl-as-1 {
+	text-align:center;
+	margin-bottom:20px;
+	min-height:350px;
+}
+.fl-as-1 h4 {
+	line-height:2;
+	text-align:center;
+}
+.fl-as-1 .price {
+	color:#75c5cf;
+	font-weight:600;
+}
+</style>
+<patTemplate:tmpl name="rows" unusedvars="strip">
+	<div class="fl-as-1 col-xs-12 col-sm-6 col-md-6 col-lg-3 appear" data-animated="bounceIn" data-start="{ANIMATION_DELAY}">
+		<img src="{IMAGE}" class="img-circle" alt="{NAME}" width="125" height="125"/>
+		<h4>{NAME}&nbsp;{STARS} {SUPERIOR}</h4>
+		<p>{STREET}, {TOWN}, {REGION}, {COUNTRY}</p>
+		<p class="price">{PRICE_PRE_TEXT} {PRICE_PRICE} {PRICE_POST_TEXT}</p>
+		<a href="{URL}" class="btn btn-info" title="{NAME}">{MOREINFORMATION}</a>
+	</div>
+</patTemplate:tmpl>
+<div class="clearfix"></div>
+</patTemplate:tmpl>

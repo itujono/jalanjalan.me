@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7" method="upgrade">
+  <name>ListManager Compare Module</name>
+  <creationDate>November 2017</creationDate>
+  <author>Moonsoft</author>  
+  <authorEmail>gestion@moonsoft.es</authorEmail>
+  <authorUrl>www.moonsoft</authorUrl>
+  <copyright>(C) 2017 Moonsoft</copyright>
+  <license>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</license>      
+  <version>2.5.5</version>  
+  <description><![CDATA[LM_MODULE_DESC]]></description>
+  <files>
+    <filename module="mod_listmanagercomp">mod_listmanagercomp.php</filename>
+    <filename module="mod_listmanagercomp">mod_listmanagercomp.xml</filename>
+    <filename module="mod_listmanagercomp">index.html</filename>
+    <folder>assets</folder>
+    <folder>tmpl</folder>
+    <folder>language</folder>
+  </files>
+   <languages>
+      <!-- Any language files included with the module -->
+      <language tag="en-GB">language/en-GB.mod_listmanagercomp.ini</language>      
+  </languages>
+  <config>
+		<fields name="params">
+			<fieldset name="params" label="Basic">		
+		        <field name="moduleclass" type="text" default="" label="LM_MCS" description="LM_MCS_DESC"></field>
+		        <field name="numcomp" type="text" default="5" label="LM_NUM" description="LM_NUM_COMP"></field>
+		        <field name="comptabletitle" type="text" default="" label="LM_COMPARE_TABLE_TITLE" description="LM_COMPARE_TABLE_TITLE_DESC"></field>
+		        <field name="comptable" type="radio" default="0" label="LM_COMPARE_TABLE" description="LM_COMPARE_TABLE_DESC">
+				  <option value="0">LM_COMPARE_TABLE_HORIZONTAL</option>
+				  <option value="1">LM_COMPARE_TABLE_VERTICAL</option>
+				</field>
+				<field name="seebutton" type="radio" default="1" label="LM_SEEBUTTON" description="LM_SEEBUTTON_DESC">
+				  <option value="0">LM_NO</option>
+				  <option value="1">LM_YES</option>
+				</field>
+				<field name="seetext" type="radio" default="1" label="LM_SEETEXT" description="LM_SEETEXT_DESC">
+				  <option value="0">LM_NO</option>
+				  <option value="1">LM_YES</option>
+				</field>
+				<field name="seeexpand" type="radio" default="1" label="LM_SEEEXPAND" description="LM_SEEEXPAND_DESC">
+				  <option value="0">LM_NO</option>
+				  <option value="1">LM_YES</option>
+				</field>
+				<field name="seeremove" type="radio" default="1" label="LM_SEEREMOVE" description="LM_SEEREMOVE_DESC">
+				  <option value="0">LM_NO</option>
+				  <option value="1">LM_YES</option>
+				</field>				
+		    </fieldset>
+		</fields>
+	</config>	
+</extension>

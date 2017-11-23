@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Advisor"  hidden="true">
+		<message>
+			<![CDATA[Advisor]]>
+		</message>
+	</layout>
+	<state>
+		<name>Advisor</name>
+		<description>Advisor</description>		
+	</state>
+</metadata>
+

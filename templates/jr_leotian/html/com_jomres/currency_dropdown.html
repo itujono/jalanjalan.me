@@ -1,0 +1,12 @@
+<patTemplate:tmpl name="pageoutput">
+<script>
+function changeCurrency($newCurrency) {
+	switch_exchange_rate('{JOMRES_SITEPAGE_URL_AJAX}',$newCurrency);
+	}
+</script>
+<select name="user_current_currency_code" id="user_current_currency_code" onchange="changeCurrency(this.value);" size="1">
+	<patTemplate:tmpl name="rows">
+		<option value="{CURRENCY_CODE}" {SELECTED}>{TEXT}</option>
+	</patTemplate:tmpl>
+</select>
+</patTemplate:tmpl>

@@ -1,0 +1,116 @@
+/*
+ * @component Advisor 
+ * @copyright Copyright (C) 2012 Moonsoft.  
+ * @license GPL 3.0
+ * This program is free software: you can redistribute it and/or modify it under the terms of the 
+ * GNU General Public License as published by the Free Software Foundation, either version 3 of the License, 
+ * or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ * See <http://www.gnu.org/licenses/>.
+ * More info www.moonsoft.es gestion@moonsoft.es 
+ */
+ 
+.ad_explain_wrapper{
+	width:99%;
+	height:180px;
+	border-style:solid;
+	border-color:#ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top:5px;
+	margin-bottom:8px;
+	background-color:#f8f8f8;
+	}
+.ad_explain_step{
+	float:left;
+	margin:5px;
+	margin-left:8px;
+	margin-right:8px;
+	border-style:solid;
+	border-color:#ccc;
+	border-width:1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:5px;
+	background-color:#ddd;
+	}
+.ad_open{
+	background-color:#fff;
+	}
+.ad_current{
+	background-color:#fff;
+	}
+
+.ad_explain_step .ad_title_1{ width:126px; }
+.ad_explain_step .ad_title_2{ width:126px; }
+.ad_explain_step .ad_title_3{ width:126px; }
+.ad_explain_step .ad_title_4{ width:126px; }
+.ad_explain_step .ad_title_5{ width:126px; }
+.ad_explain_step .ad_title_6{ width:126px; }
+.ad_explain_step .ad_title{
+	font-size:1.3em;
+	font-weight:bold;
+}
+.ad_explain_step .ad_title .ad_number{
+	height: 21px;
+	}
+.ad_explain_step .ad_title .ad_number_text{
+	
+	}
+.ad_explain_step .ad_content{
+	margin-top:5px;
+	color:#000;	
+	width:126px;
+	}
+.ad_explain_step .ad_status{
+	margin-top:5px;
+	color:#aaa;
+	}	
+.ad_explain_step .ad_actions{
+	margin-top:5px;
+	font-size:0.85em;
+	color:#333;
+	}
+.ad_explain_step .ad_actions div{
+	float:left;	
+	height:26px;
+	line-height:26px;	
+	}
+.ad_explain_step .ad_actions img{
+	margin-left:3px;
+	margin-right:3px;
+	}
+.radio_col{
+	float:left;
+	text-align:center;
+	margin-left:7px;
+	margin-right:7px;
+	}
+.columns{
+	float:left;
+	text-align:center;
+	margin-left:5px;
+	margin-right:15px;
+	font-weight:bold;
+	padding-top: 12px;
+	}
+.columns_normal{
+	float:left;
+	text-align:center;
+	margin-left:5px;
+	margin-right:15px;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top: 2px;
+	}	
+.input_normal{
+	float:left;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	}

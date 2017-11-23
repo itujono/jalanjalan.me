@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List Manager"  hidden="true">
+		<message>
+			<![CDATA[List Manager component Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>List Manager email page</name>
+		<description>List Manager email page</description>		
+	</state>
+</metadata>
+

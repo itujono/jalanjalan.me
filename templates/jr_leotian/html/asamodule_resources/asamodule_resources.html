@@ -1,0 +1,24 @@
+<patTemplate:tmpl name="pageoutput" unusedvars="strip">
+
+<patTemplate:tmpl name="rows">
+	<div title="{ROOMTYPE}" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 appear" data-animated="flipInX" data-start="{ANIMATION_DELAY}">
+		<div class="ngm-thumb">
+			<img src="{IMAGEMEDIUM}" alt="{ROOMTYPE}" title="{ROOMTYPE}" class="img-responsive" />
+			<div class="mask">
+				<div class="main">
+					<h5>{ROOMTYPE}</h5>
+					<div class="price">
+						{PRICE_PRICE} <span>{PRICE_POST_TEXT}</span>
+					</div>
+				</div>
+				<div class="content">
+					<p>{HMAXPEOPLE}: {MAXPEOPLE}</p>
+					<p>{ROOM_FEATURES}</p>
+					<a href="{MOREINFORMATIONLINK}" class="btn btn-primary btn-block" title="{ROOMTYPE}">{MOREINFORMATION}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</patTemplate:tmpl>
+
+</patTemplate:tmpl>

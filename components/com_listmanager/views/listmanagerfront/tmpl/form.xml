@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List Manager Form" >
+		<message>
+			<![CDATA[List Manager Form Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>List Manager form</name>
+		<description>List Manager form</description>
+		<fields name="params">
+			<fieldset name="params" label="Basic">		
+	    		<field name="moduleclass_sfx" type="text" default="" label="LM_MCS" description="LM_MCS_DESC"></field>
+	    		<field name="prefsids" type="sql" default="-1" label="LM_SELECT_LISTING" description="LM_SELECT_LISTING_DESC" query="SELECT id, name as title FROM #__listmanager_listing union select concat('v_',id), concat('List ( ',(select l.name from #__listmanager_listing l where l.id=v.idlisting) ,' ) -> View: ',v.name) as title from #__listmanager_view v" key_field="id" value_field="title" />
+	    		<field name="nexturl" type="text" size="80" default="" label="LM_SELECT_NEXTURL" description="LM_SELECT_NEXTURL_DESC"/>
+	    		<field name="theme" type="list" default="default" label="LM_THEME" description="LM_THEME_DESC">
+			      <option value="default">LM_THEME_DEFAULT</option>
+			      <option value="blue">LM_THEME_BLUE</option>
+			      <option value="lightblue">LM_THEME_LIGHT_BLUE</option>
+			      <option value="darkblue">LM_THEME_DARK_BLUE</option>
+			      <option value="green">LM_THEME_GREEN</option>      
+			      <option value="darkgreen">LM_THEME_DARK_GREEN</option>
+			      <option value="red">LM_THEME_RED</option>
+			      <option value="lightred">LM_THEME_LIGHT_RED</option>
+			      <option value="darkred">LM_THEME_DARK_RED</option>
+			      <option value="gray">LM_THEME_GRAY</option>
+			      <option value="lightgray">LM_THEME_LIGHT_GRAY</option>
+			      <option value="darkgray">LM_THEME_DARK_GRAY</option>
+			      <option value="yellow">LM_THEME_YELLOW</option>
+			      <option value="lightyellow">LM_THEME_LIGHT_YELLOW</option>
+			      <option value="darkyellow">LM_THEME_DARK_YELLOW</option>
+			      <option value="orange">LM_THEME_ORANGE</option>
+			      <option value="lightorange">LM_THEME_LIGHT_ORANGE</option>
+			      <option value="purple">LM_THEME_PURPLE</option>
+			    </field>
+        	</fieldset>
+		</fields>
+	</state>
+</metadata>
+

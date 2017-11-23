@@ -1,0 +1,57 @@
+/*
+ * @component List Manager 
+ * @copyright Copyright (C) 2011 Moonsoft.  
+ * @license GPL 3.0
+ * This program is free software: you can redistribute it and/or modify it under the terms of the 
+ * GNU General Public License as published by the Free Software Foundation, either version 3 of the License, 
+ * or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ * See <http://www.gnu.org/licenses/>.
+ * More info www.moonsoft.es gestion@moonsoft.es 
+ */
+ .lm_modfilter_content_name{
+ 	float:left;
+ }
+ .lm_autofilter_multi_div_mod{
+ 	clear:both;
+	margin-top:5px;
+	padding-right: 5px;
+	margin-left: 20px;
+	margin-bottom: 24px;
+	text-align: left;
+}
+.lm_autofilter_multi_div_mod div{
+	clear:left;	
+	}
+.lm_autofilter_multi_div_mod div label{
+	margin-left:4px;
+	font-weight:normal;
+	font-size:10px;
+	vertical-align: top;
+	}
+.lm_autofilter_multi_div_mod div label{
+	display: inline;
+	margin-right: 3px;
+	}
+.lm_autofilter_multi_div_wrapper{
+	margin-top:8px;
+	margin-bottom:8px;
+	min-height: 30px;
+}
+#lm_wrapper .lm_autofilter_multi_div_name{
+	cursor:pointer;
+	text-align:left;
+	width:100%;	
+}
+.lm_autofilter_multi_div_name i{
+	margin-left:8px;	
+}
+.lm_modfilter_content{
+	text-align:center;
+	margin-top: 8px;
+}
+#lm_wrapper .checkbox label img{
+	float: left;
+}

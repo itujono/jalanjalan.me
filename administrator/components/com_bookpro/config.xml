@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config addfieldpath="/administrator/components/com_content/models/fields">
+
+	<fieldset name="MainSettings" label="Main Settings">
+		<field name="mode" type="radio" label="Company" class="btn-group">
+			<option value="0">Operator</option>
+			<option value="1">Portal</option>
+		</field>
+		<field type="radio" name="orderno_type" default="1"
+			label="Ticket Number Generation" class="btn-group">
+			<option value="0">Random Number</option>
+			<option value="1">Sequence Number</option>
+		</field>
+
+		<field name="main_currency" type="text" label="Main Currency"
+			default="USD" />
+		<field name="currency_symbol" type="text" label="CURRENCY SYMBOL"
+			default="$" />
+		<field type="list" name="currency_display" label="CURRENCY DISPLAY"
+			default="0">
+			<option value="0">100$</option>
+			<option value="1">100 $</option>
+			<option value="2">$100</option>
+			<option value="3">$ 100</option>
+		</field>
+		
+		<field name="decimals" type="text" default="2" label="DECIMALS" />
+        <field name="decimals_point" type="radio" default="," label="DECIMALS POINT" class="btn-group">
+            <option value=",">COMMA</option>
+            <option value=".">POINT</option>
+        </field>
+		
+		
+		<field name="tax" type="text" label="Tax fee"	default="10" />
+		<field name="currency_seperator" type="text" label="CURRENCY SEPERATOR"/>
+		<field name="timespace" type="text" default="H:i A" label="Time format" />
+		<field name="cutofftime" type="text" default="60"
+			label="Cut off time booking" />
+			
+		<!-- 
+		<field name="seat_busy" type="list" default="1"
+			label="Seat busy with paid">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		 -->
+		 
+		 <field name="expired_hour" type="number" default="60" label="Hold seat by minutes" description="Hold seat by number of minutes" />
+		 <field name="hold_payment_method" type="text" default="offline" label="Hold with payment method" description="Offline, paypal, ..." />
+		 
+		 <field type="text" name="gmap_api" default="" label="Google Map API Key"/>
+			
+		<field name="no_seat" type="radio" default="0" class="btn-group"
+			label="Disable seat">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		<field name="door2door" type="radio" default="0" class="btn-group"
+			label="Door to Door">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		
+		<field name="online" type="radio" default="1" class="btn-group"
+			label="Enable booking">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		
+		
+		<field name="bs" type="list" default="0" class="btn-group"
+			label="Bootstrap version">
+			<option value="bs2">Bootstrap 2</option>
+			<option value="bs3">Bootstrap 3</option>
+		</field>
+		
+		
+		
+		<field type="text" name="date_long" default="D, d M Y" label="Long date" />
+		<field type="text" name="date_normal" default="d-m-Y H:i:s" label="Normal date"/>
+		<field type="text" name="date_day_short" default="d-m-Y" label="Day date short"/>
+
+		<field name="privacy_content_id" type="modal_article" label="Privacy Article" />
+		<field name="term_content_id" type="modal_article" label="Terms Article" />
+
+	
+	</fieldset>
+	<fieldset name="AccountSetting" label="Account Setting">
+
+		<field name="customers_usergroup" type="usergroup" label="Customers user group"
+			description="HLP_CUSTOMERS USER GROUP" />
+		<field name="agent_usergroup" type="usergroup" label="Agent user group"
+			description="Agent user group" />
+		<field name="driver_usergroup" type="usergroup" label="Driver user group" />
+		<field name="supplier_usergroup" 	type="usergroup" label="Supplier user group"/>
+		
+		 
+	</fieldset>
+
+
+	<fieldset name="RegistrationReservationFields" label="Registration Fields">
+		<field type="spacer" default="Reservation setting info" />
+		<field type="list" name="rs_firstname" default="1" label="Firstname">
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_lastname" default="1" label="Lastname">
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_address" default="1" label="Street">
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_states" default="1" label="State"
+		>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_city" default="1" label="City"
+			>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_country" default="1" label="Country"
+			>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_zip" default="1" label="Zip"
+			>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_email" default="1" label="Email"
+			>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_telephone" default="1" label="Telephone"
+			>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field type="list" name="rs_mobile" default="1" label="Mobile"
+			>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="list" name="rs_fax" default="1" label="Fax"
+			>
+			<option value="0">No hide</option>
+			<option value="1">JYES</option>
+		</field>
+		<field type="radio" name="rs_gender" default="1" label="Gender"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+	</fieldset>
+
+	<fieldset name="PassengerFields" label="Passenger Fields">
+		
+		<field type="radio" name="is_lead" default="1" label="Using Lead passenger as contact"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		<field type="radio" name="ps_gender" default="1" label="COM_BOOKPRO_PASSENGER_GENDER"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		<field type="radio" name="ps_lastname" default="1" label="COM_BOOKPRO_PASSENGER_LASTNAME"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field type="radio" name="ps_group" default="1" label="COM_BOOKPRO_PASSENGER_GROUP"
+			class="btn-group">
+			<option value="1">JYes</option>
+		</field>
+		<field type="radio" name="ps_passport" default="0" label="COM_BOOKPRO_PASSENGER_PASSPORT"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field type="radio" name="ps_ppvalid" default="0" label="COM_BOOKPRO_PASSENGER_PPVALID"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field type="radio" name="ps_country" default="0" label="COM_BOOKPRO_PASSENGER_COUNTRY"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field type="radio" name="ps_birthday" default="1" label="COM_BOOKPRO_PASSENGER_BIRTHDAY"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		<field type="radio" name="ps_flightno" default="1" label="COM_BOOKPRO_PASSENGER_FLIGHTNO"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		<field type="radio" name="ps_notes" default="0" label="COM_BOOKPRO_PASSENGER_NOTES"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		<field type="radio" name="ps_email" default="0" label="COM_BOOKPRO_PASSENGER_EMAIL"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		<field type="radio" name="ps_phone" default="0" label="COM_BOOKPRO_PASSENGER_PHONE"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		
+		
+		<!-- 
+		<field type="radio" name="ps_bag" default="1" label="Baggage"
+			class="btn-group">
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+		
+		 -->
+
+	</fieldset>
+	<!-- <fieldset name="GallerySetting" label="Gallery Setting"> <field type="radio" 
+		name="display_image_subject_detail" label="Show Image" description="HLP_SHOW 
+		IMAGE" class="btn-group"> <option value="0">JNo</option> <option value="1">JYes</option> 
+		</field> <field name="display_thumbs_subject_detail_width" type="text" label="Image 
+		Width" description="HLP_IMAGE WIDTH" size="10" /> <field name="display_thumbs_subject_detail_height" 
+		type="text" label="Image Height" description="HLP_IMAGE HEIGHT" size="10" 
+		/> <field type="radio" name="display_gallery_subject_detail" label="Show 
+		Photogallery" description="HLP_SHOW PHOTOGALLERY" class="btn-group"> <option 
+		value="0">JNo</option> <option value="1">JYes</option> </field> <field name="display_gallery_thumbs_subject_detail_width" 
+		type="text" label="Gallery Thumb width" description="HLP_GALLERY THUMB WIDTH" 
+		size="10" /> <field name="display_gallery_thumbs_subject_detail_height" type="text" 
+		label="Gallery Thumb height" description="HLP_GALLERY THUMB HEIGHT" size="10" 
+		/> <field name="display_gallery_preview_subject_detail_width" type="text" 
+		label="Gallery Preview width" description="HLP_GALLERY PREVIEW WIDTH" size="10" 
+		/> <field name="display_gallery_preview_subject_detail_height" type="text" 
+		label="Gallery Preview height" description="HLP_GALLERY PREVIEW HEIGHT" size="10" 
+		/> </fieldset> -->
+
+	<fieldset name="Invoice" label="COM_BOOKPRO_COMPANY">
+
+		<field name="company_name" type="text" label="COM_BOOKPRO_COMPANY_NAME" />
+		<field name="company_address" type="text" label="COM_BOOKPRO_COMPANY_ADDRESS" />
+		<field name="company_logo" type="media" label="COM_BOOKPRO_COMPANY_LOGO" />
+
+		<field name="invoice_header" type="editor" label="COM_BOOKPRO_INVOICE_HEADER"
+			description="COM_BOOKPRO_INVOICE_HEADER" />
+		<field name="invoice_footer" type="editor" label="COM_BOOKPRO_INVOICE_FOOTER"
+			description="COM_BOOKPRO_INVOICE_FOOTER" />
+	</fieldset>
+	
+	<fieldset name="update" label="Auto Update">
+		<field name="update_credentials_download_id" default="" type="text" label="Download ID" description="Enter the download id obtained from joombooking.com. This is required for the extensions to get automatic updates."/>
+	</fieldset>
+
+	<fieldset name="permissions" description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL">
+		<field name="rules" type="rules" component="com_bookpro" filter="rules"
+			validate="rules" label="JCONFIG_PERMISSIONS_LABEL" section="component" />
+	</fieldset>
+</config>

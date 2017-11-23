@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>jr_leotian</name>
+	<version>1.1.17</version>
+	<creationDate>27 Feb 2014</creationDate>
+	<author>Aladar Barthi</author>
+	<authorEmail>support@jomres-extras.com</authorEmail>
+	<authorUrl>http://www.jomres-extras.com</authorUrl>
+	<copyright>Copyright (C), jomres-extras.com. All Rights Reserved.</copyright>
+	<license>Commercial</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div align="center">
+			Joomla template for Jomres
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_jr_leotian.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_jr_leotian.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>mainnav</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>mast-col</position>
+		<position>footer</position>
+		<position>home-0</position>
+		<position>home-1</position>
+		<position>home-2</position>
+		<position>home-3</position>
+		<position>home-4</position>
+		<position>home-5</position>
+		<position>home-search</position>
+		<position>call-to-action1</position>
+		<position>call-to-action2</position>
+		<position>call-to-action3</position>
+		<position>call-to-action4</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>position-16</position>
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>footer-9</position>
+		<position>footer-10</position>
+		<position>debug</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<!-- Sample for add or disable template parameters -->
+			<!--fieldset name="menu_params" label="T3_PARAMS_MEGAMENU">
+				<field name="group_disable" type="t3depend" function="@group">
+					<option for="menu_as_bg" value="no">menu_as_bg</option>
+				</field>
+			</fieldset-->
+			
+			<fieldset name="addon_params" label="T3_ADDON_LABEL" description="T3_ADDON_DESC">
+				<field type="t3depend" function="@legend" label="T3_ADDON_ANIMATIONS"
+							 description="T3_ADDON_ANIMATIONS_DESC"/>
+	
+				<field name="addon_animations_enable" type="radio" default="1"
+							 global="1"
+							 label="T3_ADDON_ANIMATIONS_ENABLE"
+							 description="T3_ADDON_ANIMATIONS_DESC">
+					<option value="0" class="off">JNO</option>
+					<option value="1" class="on">JYES</option>
+				</field>
+			</fieldset>
+			
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="JR Leohtian Update">http://updates.jomres4.net/leohtian_updates.xml</server>
+	</updateservers>
+
+</extension>

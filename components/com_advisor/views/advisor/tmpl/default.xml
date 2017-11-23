@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="MENU_COMP_AD_TITLE">
+		<message>
+			<![CDATA[MENU_COMP_AD_MESSAGE]]>
+		</message>
+	</layout>
+	<state>
+		<name><![CDATA[MENU_COMP_AD_NAME]]></name>
+		<description><![CDATA[MENU_COMP_AD_DESCRIPTION]]></description>		
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_advisor/element">
+				<field name="moduleclass_sfx" type="text" default="" label="MOD_CLASS_SUFFIX" description="MOD_CLASS_SUFFIX_DESC"></field>
+				<field name="prefsids" type="preferences" default="" label="MOD_CLASS_FLOW" description="MOD_CLASS_FLOW_DESC"></field>				
+			</fieldset>
+		</fields>
+	</state>
+</metadata>
+

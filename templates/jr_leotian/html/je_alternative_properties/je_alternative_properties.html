@@ -1,0 +1,87 @@
+<patTemplate:tmpl name="pageoutput" unusedvars="strip">
+{JOMRES_POPUPURL_GLOBALVAR}
+
+<h2 class="page-header appear" style="margin-top:20px;" data-animated="fadeInRight" data-start="0">{PAGETITLE}</h2>
+
+<div class="row">
+	<patTemplate:tmpl name="rows" unusedvars="strip">
+	<div class="jomres_property_list_propertywrapper photo-view col-xs-12 col-sm-12 col-md-6 col-lg-4 appear" id="{UID}" data-animated="flipInX" data-start="{DELAY}">
+		<div class="panel panel-primary">
+			
+			<div class="panel-heading visible-xs visible-sm">
+				<h2 class="panel-title"><a href="{MOREINFORMATIONLINK}">{PROPERTYNAME}</a></h2>
+			</div>
+			
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="property-pic-wrapper">
+							<a href="#module_{RANDOM_IDENTIFIER}_popup" data-toggle="modal" random_identifier="{RANDOM_IDENTIFIER}" property_name="{PROPERTYNAME}" property_uid="{UID}"><img src="{IMAGE}" class="img-responsive" alt="{PROPERTYNAME}"/></a>
+							<div class="jomres-plist-prices-lg visible-md visible-lg">
+								{PRICE_PRE_TEXT}
+								<span class="big-price">{PRICE_PRICE}</span>
+								{PRICE_POST_TEXT}
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						
+						<p class="visible-md visible-lg">&nbsp;</p>
+					
+						<div class="row">
+							<div class="col-md-8">
+								<h2 class="page-header visible-md visible-lg"><a href="{MOREINFORMATIONLINK}">{PROPERTYNAME}</a></h2>
+								<div class="visible-md visible-lg"><span class="label label-default">{PROPERTY_TYPE}</span> <span>{STARS} {SUPERIOR}</span></div>
+							</div>
+							<div class="col-md-4">
+								<span class="visible-md visible-lg pull-right icons-only">
+									<a href="{BOOKTHIS_LINK}" class="btn btn-success" title="{BOOKTHIS_TEXT}"><i class="fa fa-shopping-cart"></i></a>
+								</span>
+							</div>
+						</div>
+						
+						<div class="row visible-xs visible-sm">
+							<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+								
+								<p class="visible-xs visible-sm">&nbsp;</p>
+								
+								<div><span class="label label-default">{PROPERTY_TYPE}</span> <span>{STARS} {SUPERIOR}</span></div>
+								
+								<p><em>{TOWN}, {REGION}, {COUNTRY}</em></p>
+
+							</div>
+							
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 jomres-plist-prices-sm visible-xs visible-sm">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-12 col-lg-12 prices-from">
+										{PRICE_PRE_TEXT} <i class="fa fa-angle-right"></i> 
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-12 col-lg-12">
+										<span class="big-price">{PRICE_PRICE}</span>
+										{PRICE_POST_TEXT}
+									</div>
+								</div>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+			</div>
+	
+			<div class="panel-footer visible-xs visible-sm">
+				<a href="{BOOKTHIS_LINK}" class="btn btn-success pull-right"><i class="fa fa-shopping-cart"></i> {BOOKTHIS_TEXT}</a>
+				<a href="{MOREINFORMATIONLINK}" class="btn btn-info"><i class="fa fa-info"></i> {MOREINFORMATION}</a>
+			</div>
+	
+		</div>
+	</div>
+	<script>
+	   jomresJquery(document).ready(function(){
+		 jomresJquery('#module_{RANDOM_IDENTIFIER}_popup').appendTo("body");
+		});
+	</script>
+	<div class="modal fade" id="module_{RANDOM_IDENTIFIER}_popup"></div><!-- /.modal -->
+	</patTemplate:tmpl>
+</div>
+</patTemplate:tmpl>

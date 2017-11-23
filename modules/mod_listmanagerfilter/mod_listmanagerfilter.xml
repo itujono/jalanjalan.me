@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.7" method="upgrade">
+  <name>ListManager Filter Module</name>
+  <creationDate>November 2017</creationDate>
+  <author>Moonsoft</author>  
+  <authorEmail>gestion@moonsoft.es</authorEmail>
+  <authorUrl>www.moonsoft</authorUrl>
+  <copyright>(C) 2017 Moonsoft</copyright>
+  <license>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</license>      
+  <version>2.5.5</version>  
+  <description><![CDATA[LM_MODULE_DESC]]></description>
+  <files>
+    <filename module="mod_listmanagerfilter">mod_listmanagerfilter.php</filename>
+    <filename module="mod_listmanagerfilter">mod_listmanagerfilter.xml</filename>
+    <filename module="mod_listmanagerfilter">helper.php</filename>
+    <filename module="mod_listmanagerfilter">index.html</filename>
+    <folder>assets</folder>
+    <folder>tmpl</folder>
+    <folder>language</folder>
+  </files>
+   <languages>
+      <!-- Any language files included with the module -->
+      <language tag="en-GB">language/en-GB.mod_listmanagerfilter.ini</language>      
+  </languages>
+  <config>
+		<fields name="params">
+			<fieldset name="params" label="Basic">		
+			    <field name="moduleclass" type="text" default="" label="LM_MCS" description="LM_MCS_DESC"></field>
+			    <field name="ids" type="sql" default="-1" label="LM_SELECT_LISTING" description="LM_SELECT_LISTING_DESC" query="SELECT id, name as title FROM #__listmanager_listing union select concat('v_',id), concat('List ( ',(select l.name from #__listmanager_listing l where l.id=v.idlisting) ,' ) -> View: ',v.name) as title from #__listmanager_view v" key_field="id" value_field="title" />
+			    <field name="hidefilteronlist" type="radio" default="1" label="LMF_HIDEFILTER" description="LMF_HIDEFILTER_DESC">
+					<option value="0">LM_NO</option>
+					<option value="1">LM_YES</option>
+				</field>		        
+		  	</fieldset>
+		</fields>
+	</config>	
+</extension>

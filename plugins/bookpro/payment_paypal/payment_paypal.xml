@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="bookpro" method="upgrade">
+	<name>Bookpro Paypal</name>
+	<version>2.1</version>
+	<creationDate>Jan 2013</creationDate>
+	<author>Joombooking.com</author>
+	<authorEmail>support@joombooking.com</authorEmail>
+	<authorUrl>http://www.joombooking.com</authorUrl>
+	<copyright>Joombooking ltd</copyright>
+	<license>GNU General Public License v3 or later versions</license>
+	<description>Bookpro paypal plugin for bookpro</description>
+	<files>
+		<filename plugin="payment_paypal">payment_paypal.php</filename>
+		<folder>payment_paypal</folder>  	
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_bookpro_payment_paypal.ini</language>
+	</languages>
+	<config>
+	<fields name="params">
+  	  <fieldset name="basic">
+  	  <field name="display_name" type="text" size="30" default="" label="Display Name" description="Name appears at payment page of frontend"/>
+		<field name="merchant_email" type="text" size="50" default="" label="bookpro_paypal_email" description="bookpro_paypal_email_desc"/>
+		 <field name="currency" type="text" size="50" default="" label="Currency" description="Valid currency code by Paypal"/>   
+		<field type="spacer" />
+        <field name="sandbox" type="radio" default="0" label="bookpro_paypal_use_sandbox" class="btn-group">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="sandbox_merchant_email" type="text" size="50" default="" label="bookpro_paypal_sandbox_merchant_email"/>        
+				
+		</fieldset>
+	</fields>
+</config>				
+</extension>

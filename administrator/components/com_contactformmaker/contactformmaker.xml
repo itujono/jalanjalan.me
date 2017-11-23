@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="component" version="3.0" method="upgrade">
+
+		<name>COM_CONTACTFORMMAKER</name> 
+		<author>Web Dorado</author>
+		<creationDate>September 2011</creationDate>
+		<copyright>Copyright (C) 2013 Web-Dorado.com All rights reserved.</copyright>
+		<authorEmail>info@web-dorado.com</authorEmail>
+		<authorUrl>http://web-dorado.com/</authorUrl>
+		<version>1.0.9</version>
+
+        <description>	Contact Form Maker is a simple tool to add slick contact forms into your Joomla website. The extension includes a number of Contact form templates, which can be edited in a manner to fit the basic needs.
+	</description>
+
+	<scriptfile>script.contactformmaker.php</scriptfile>
+	<install>
+    		<sql>
+     			 <file charset="utf8" driver="mysql">install.mysql.sql</file>
+    		</sql>
+ 	</install>
+
+ 	<uninstall>
+    		<sql>
+				<file charset="utf8" driver="mysql">uninstall.mysql.sql</file>
+
+			</sql>
+	</uninstall>
+
+	<files>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>images</folder>
+		<filename>controller.php</filename>
+		<filename>contactformmaker.php</filename>
+		<filename>recaptchalib.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+        <language tag="en-GB">en-GB.com_contactformmaker.ini</language>
+    </languages> 
+	
+	<administration>
+
+		<menu link="option=com_contactformmaker" img="components/com_contactformmaker/images/FormMakerLogo-16.png">COM_CONTACTFORMMAKER_MENU</menu>
+			   <submenu>
+                        <menu task="forms" img="components/com_contactformmaker/images/FormMakerLogo-16.png">COM_CONTACT_FORMS_MENU</menu>
+                        <menu task="submits" img="components/com_contactformmaker/images/FormMakerLogo-16.png">COM_CONTACT_SUBMISSIONS_MENU</menu>
+                        <menu task="themes" img="components/com_contactformmaker/images/FormMakerLogo-16.png">COM_CONTACT_THEMES_MENU</menu>
+              <menu task="blocked_ips" img="components/com_contactformmaker/images/FormMakerLogo-16.png">COM_CONTACT_BLOCKED_IPS_MENU</menu>
+              <menu task="global_options" img="components/com_contactformmaker/images/FormMakerLogo-16.png">COM_CONTACT_GLOBAL_OPTIONS_MENU</menu>
+            
+			  </submenu>	       
+			   
+		<files folder="admin">
+		    <folder>tables</folder>
+		    <folder>elements</folder>
+		    <folder>helper</folder>
+		    <folder>models</folder>
+		    <folder>views</folder>
+		    <folder>images</folder>
+		    <folder>js</folder>
+		    <folder>css</folder>
+			<filename>admin.contactformmaker.html.php</filename>
+
+			<filename>contactformmaker.php</filename>
+
+			<filename>toolbar.contactformmaker.html.php</filename>
+
+			<filename>install.mysql.sql</filename>
+
+			<filename>uninstall.mysql.sql</filename>
+			<filename>update.mysql.sql</filename>
+			<filename>controller.php</filename>
+
+			<filename>index.html</filename>
+
+			<filename>ContactFormMakerLogo.css</filename>
+	    </files>
+<languages folder="admin">
+		<language tag="en-GB">en-GB.com_contactformmaker.sys.ini</language>
+        </languages>
+
+ 	</administration>
+
+</extension>

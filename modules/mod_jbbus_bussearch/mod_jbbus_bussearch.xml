@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>Bus Search</name>
+	<author>Quan,Ngo Van</author>
+	<creationDate>April 2014</creationDate>
+	<copyright>Joombooking.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>quan@joombooking.com</authorEmail>
+	<authorUrl>http://joombooking.com</authorUrl>
+	<version>2.2.0</version>
+	<description>JBBus Search</description>
+	<files>
+		<filename module="mod_jbbus_bussearch">mod_jbbus_bussearch.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jbbus_bussearch.ini</language>
+	</languages>
+	<config>
+		
+		<fields name="params" addfieldpath="/administrator/components/com_bookpro/elements">
+			<fieldset name="basic">
+					<field name="layout" type="modulelayout" default="45" label="Layout" description="Layout default or vertical" />
+					<field name="roundtrip" type="list" label="Default search" class="btn-group" default="0">
+						<option value="1">Roundtrip</option>
+						<option value="0">OneWay</option>
+						<option value="2">OneWay Only</option>
+					</field>
+					
+		<field name="showbus" type="radio" label="Enable Bus Type Search"
+			 class="inputbox btn-group small"
+			size="1" default="0">
+			<option value="1">JYes</option>
+			<option value="0">JNo</option>
+		</field>
+		
+		<!-- 
+		<field name="showcompany" type="radio" label="Enable Company Search"
+			 class="inputbox btn-group small"
+			size="1" default="0">
+			<option value="1">JYes</option>
+			<option value="0">JNo</option>
+		</field>
+		 -->
+					
+		<field name="pax" type="number" default="10" label="Maximum passenger" description="Maximum passenger in a booking" />
+	    <field name="Itemid" type="menuitem" label="Item ID" description="Choose Itemid to display search result" />
+					 
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

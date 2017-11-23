@@ -1,0 +1,623 @@
+.lm_sections_layout{
+	float:left;
+}
+.lm_fields{
+	margin-left:20px;
+	float:left;
+	}
+#editcell table{
+	border-collapse: collapse;
+}
+#editcell select{
+	width:auto;
+	}
+#editcell select,
+#editcell input{
+	//font-size:11px;	
+	}
+#editcell input[type=checkbox]{
+	/*margin-top:-9px;
+	margin-right:3px;
+	margin-left:3px;*/
+	}
+#editcell table td{
+	vertical-align:middle;
+	padding: 6px;
+}
+#editcell table th{
+	font-size: 12px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#deflisting table td{
+	vertical-align:middle;
+	padding: 9px;
+}
+#deflisting table tbody tr td.def_edit{	
+	background-color:#f8f8f8;	
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_edit:hover{	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+#deflisting table tbody tr td.def_manage_data{
+	background-color:#e1f0fc;
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_manage_data:hover{	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+#deflisting table tbody tr td.def_acl{
+	background-color:#fafce1;
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_acl:hover{	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+#deflisting table tbody tr td.def_config{
+	background-color:#fff0f1;
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_config:hover{	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+#deflisting table tbody tr td.def_export{
+	background-color:#ecfce1;
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_export:hover{	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+#deflisting table tbody tr td.def_access{
+	background-color:#ede3fe;
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_search{
+	background-color:#eaa061;
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_access:hover{	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+#deflisting table tbody tr td.def_backup{
+	background-color:#f7f7f7;
+	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#deflisting table tbody tr td.def_backup:hover{	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+#deflisting table thead tr th.def_edit{
+	width:120px;
+	color:#f8f8f8;
+	background-color:#555;
+}
+#deflisting table thead tr th.def_manage_data{
+	width:120px;
+	color:#f0f0f0;
+	background-color:#555;
+}
+#deflisting table thead tr th.def_acl{
+	width:120px;
+	color:#fafce1;
+	background-color:#555;
+}
+#deflisting table thead tr th.def_config{
+	width:120px;
+	color:#fff0f1;
+	background-color:#555;
+}
+#deflisting table thead tr th.def_export{
+	width:120px;
+	color:#ecfce1;
+	background-color:#555;
+}
+#deflisting table thead tr th.def_access{
+	width:120px;
+	color:#ecfce1;
+	background-color:#555;
+}
+#deflisting table thead tr th.def_search{
+	width:120px;
+	color:#ecfce1;
+	background-color:#555;
+}
+#deflisting table thead tr th.def_backup{
+	width:120px;
+	color:#ecfce1;
+	background-color:#555;
+}
+#deflisting table thead th{
+	font-size:14px;
+	text-align:center;
+	vertical-align:middle;
+}
+#deflisting textarea{
+	width:500px;
+	}
+table tbody td.lm_list{
+	background-color : #ddd;
+}
+table tbody th.lm_list{
+	background-color : #ddd;
+}
+table tbody .lm_view{
+	background-color : #f2f2f2;
+}
+#lm_option_table{
+	width:100%;
+	}
+#lm_option_table td{
+	text-align:center;
+	width: 25%;
+	}
+.lm_option_wrapper{
+	margin-top:5px;
+	margin-bottom:8px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-align:center;
+	background-color:#fdfdfd;
+	}	
+.lm_option_formtype{
+	margin:5px;	
+	text-align:center;
+	background-color:#ddd;
+	border-radius:5px;
+	height:50px;
+	cursor:pointer;
+	}
+.lm_option_formtype div{
+	font-size:1.4em;
+	font-weight:bold;
+	padding-top: 15px;
+	}
+.lm_option_title{
+	font-size:15px;
+	font-weight:bold;
+}
+.lm_editor{
+	float:right;
+	margin-left:15px;
+	}
+.lm_help{
+	margin:10px;
+	background-color:#fdfdfd;
+	border-radius:5px;
+	border: 2px solid #ddd;
+	padding:10px;
+	color:#333;	
+	}
+.lm_help_content{
+	margin:10px;
+	}
+.lm_help_content table{
+	width:100%;
+	}
+.lm_help_content table td{
+	padding:5px;
+	vertical-align: top;
+	}
+.lm_help_title{
+	margin-bottom:8px;
+	font-size:14px;
+	font-weight:700;
+	margin-top: 15px;
+	}
+.lm_table_img{
+	width: 60px;
+	}
+.lm_table_name{
+	width: 200px;
+	font-size: 12px;
+	font-weight: 600;
+	}
+.lm_help_open{
+	background: url("../img/help.png") no-repeat scroll 0 0 transparent;
+	margin-top:10px;
+	margin-bottom:10px;
+	min-height:32px;
+	padding-left: 40px;
+	padding-top:8px;
+	font-size:15px;
+	font-weight:bold;
+	color:#2e63b0;
+	cursor:pointer;
+	width: 150px;
+	}
+.lm_help_close{
+	background: url("../img/go_up.png") no-repeat scroll 0 0 transparent;
+	margin-top:10px;
+	margin-bottom:10px;
+	min-height:32px;
+	padding-left: 40px;
+	padding-top:8px;
+	font-size:15px;
+	font-weight:bold;
+	color:#2e63b0;
+	cursor:pointer;
+	width: 150px;
+	}
+#listfieldstable{
+	/*width:1800px;*/
+	}
+#listfieldstable td,
+#listfieldstable th{
+	text-align:center;
+	padding-right: 3px;
+	padding-left: 3px;
+	}	
+#listfieldstable select{
+	width:auto;
+	}
+#listfieldstable select,
+#listfieldstable input{
+	font-size:11px;	
+	}
+#listfieldstable input[type=checkbox]{
+	margin-top:-9px;
+	margin-right:3px;
+	margin-left:3px;
+	}
+.input_name{
+	width:65px;
+}
+.input_decimal{
+	width:9px;
+	}
+.input_limit0,.input_limit1{
+	width:60px;
+	}
+.input_default{
+	width:55px;
+	}
+.input_style{
+	width:55px;
+	}
+.input_mvname{
+	width:50px;
+	}
+.input_mvval{
+	width:50px;
+	}
+.input_order{
+	width:12px;
+	}
+.input_size{
+	width:18px;
+	}
+.img_cal{
+	margin-top:-9px;
+	}
+#listfieldstable .multi img{
+	margin-top:-9px;
+	}
+#listfieldstable .multi{
+	font-size:11px;
+	}
+#listfieldstable .multi input{
+	height:11px
+	}
+	
+/*.icon-back{
+	background:url("../img/back14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}*/
+.icon-views{
+	/*background:url("../img/views14x14.png") no-repeat scroll 0 0 transparent;*/
+	background-image: url("../img/views14x14.png");
+	background-repeat:no-repeat;
+	background-position:0 0;
+	margin-bottom: -3px;
+	}
+.icon-layout{
+	background:url("../img/display14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-forwardcsv{
+	background:url("../img/forwardcsv14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-forwardsql{
+	background:url("../img/forwardsql14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-viewaccess{
+	background:url("../img/viewaccess14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-detail{
+	background:url("../img/detail14x14.png") no-repeat scroll 0 0 transparent;	
+	padding-left: 3px;
+	margin-bottom: -3px;
+	}
+.icon-access{
+	background:url("../img/clock14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-mvmove{
+	background:url("../img/mvmove.png") no-repeat scroll center center transparent;	
+	}
+.icon-mvremove{
+	background:url("../img/mvdelete.png") no-repeat scroll center center transparent;	
+	}
+.icon-resetrating{
+	background:url("../img/resetrating16.png") no-repeat scroll center center transparent;	
+	}	
+.icon-detailpdf{
+	background:url("../img/icon-detailpdf14x14.png") no-repeat scroll center center transparent;	
+	}
+.icon-detailrtf{
+	background:url("../img/icon-detailrtf14x14.png") no-repeat scroll center center transparent;	
+	}		
+.icon-importlist{
+	background:url("../img/icon-importlist14x14.png") no-repeat scroll center center transparent;	
+	}		
+	
+	
+#editcell .tableview table td{
+	text-align:center;
+	}
+#editcell .tableview input[type=text]{
+	//width:90px;
+	}
+	
+	
+.lmform{
+	margin-left:8px;
+	margin-right:8px;
+	}
+
+.lmform form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:100% verdana,arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 500px;
+  max-width: 600px;
+  width: 560px; 
+}
+
+.lmform form fieldset {
+  / * clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+}
+
+.lmform form fieldset legend {
+	font-size:1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+
+.lmform form label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 150px; 
+	padding: 0; 
+	margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: right; 
+}
+
+.lmform form fieldset label:first-letter { /* use first-letter pseudo-class to underline accesskey, note that */
+	text-decoration:underline;    /* Firefox 1.07 WIN and Explorer 5.2 Mac don't support first-letter */
+                                    /* pseudo-class on legend elements, but do support it on label elements */
+                                    /* we instead underline first letter on each label element and accesskey */
+                                    /* each input. doing only legends would  lessens cognitive load */
+                                   /* opera breaks after first letter underlined legends but not labels */
+}
+
+.lmform form input, form textarea {
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 10px; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+
+.lmform form input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+
+.lmform textarea { overflow: auto; }
+
+.lmform form small {
+	display: block;
+	margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+	font-size: 88%;
+}
+
+.lmform form .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+.lmform form br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+.lmform td,
+.lmform th{
+	padding-left:3px;
+	padding-right:3px;
+	}
+.lmform input[type=checkbox]{
+	margin-left:3px;
+	margin-right:3px;
+	}
+.lmform_left{
+	font-weight:bold;
+	}
+.igeneral{
+	background: url("../img/general.png") no-repeat scroll left center transparent;
+	width: 30px;
+	margin-bottom: 8px;
+	height: 24px;
+}
+.ifields{
+	background: url("../img/ifields.png") no-repeat scroll left center transparent;
+	width: 30px;
+	margin-bottom: 8px;
+	height: 24px;
+	margin-top: 3px;
+}
+.ikeycolums{
+	background: url("../img/key.png") no-repeat scroll left center transparent;
+	width: 30px;
+	margin-bottom: 8px;
+	height: 24px;
+	margin-top: 3px;
+}
+.cb_editmenu_item{
+	float:left;
+	font-size:16px;
+	margin-top: 4px;
+	}	
+.cb_table_wrapper{
+	background-color:#fff;
+	padding: 8px;
+	border-radius: 10px;
+	display: grid;
+	}
+div.btn-group[data-toggle=buttons-radio] button.btn_yes.active {
+    background-color: #51A351;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+div.btn-group[data-toggle=buttons-radio] button.btn_no.active {
+    background-color: #BD362F;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.multivalue_elem{
+	margin-bottom:10px;	
+}
+.multivalue{
+	height:200px;
+	overflow:auto;
+	}
+.cb_input_label{
+	margin-left: 10px;
+	margin-right: 5px;
+	}
+.cb_move{
+	background: url("../img/move.png") no-repeat scroll left center #FFFFFF;
+}
+a.cb_cmove{
+	cursor:move;
+}
+.cb_mv_buttons{
+	margin-left:10px;
+	}
+.cb_mv_buttons i{
+	height: 22px;
+	width: 16px;
+	}	
+
+.basic{
+	background-color:#f2f2f2;
+	}
+.cb_acl input[type="checkbox"]{
+	width:100%;
+	}
+.edit-multi-wrapper{
+	max-height: 150px;
+	overflow: auto;
+	width: 350px;
+}
+
+#fields1, #fields2 { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0 0 2.5em; 
+	float: left; 
+	margin-right: 10px;
+	min-width:180px; 
+}
+#fields1 li, #fields2 li { 
+	margin: 5px 5px 5px 5px; 
+	padding: 5px; 
+	font-size: 1.2em; 
+	width: 180px;
+	cursor:move; 
+}
+#fields2 li { 
+	background: none;
+	background-color: #F8F8A3; 
+}
+
+/*div.modal.fade.in{
+	top:50% !important;
+	}*/
+	
+.tab-content {
+    padding: 13px;}
+    
+.cb_table_wrapper .modal-body{ padding:1%; width:98%;}

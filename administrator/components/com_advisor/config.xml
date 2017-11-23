@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_advisor"
+			section="component" />
+	</fieldset>
+	<fieldset
+		name="basic"
+		label="COM_ADVISOR_CONFIG_BASIC_SETTINGS_LABEL"
+		description="COM_ADVISOR_CONFIG_BASIC_SETTINGS_DESC"
+	>
+		<field
+			name="helper"
+			type="radio"
+			class="btn-group"
+			label="COM_ADVISOR_CONFIG_BASIC_FIELD_HELPER"
+			description="COM_ADVISOR_CONFIG_BASIC_FIELD_HELPER_DESC"
+			default="1"
+		>
+		<option value="0">AD_NO</option>
+		<option value="1">AD_YES</option>			
+		</field>		
+	</fieldset>	
+</config>

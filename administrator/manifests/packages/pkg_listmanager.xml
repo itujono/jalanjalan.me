@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.7" method="upgrade">
+   <name>ListManager</name>
+   <author>Moonsoft</author>
+   <creationDate>November 2017</creationDate>
+   <packagename>listmanager</packagename>
+   <version>2.5.5</version>
+   <url>http://www.moonsoft.es</url>
+   <packager>Moonsoft</packager>
+   <packagerurl>http://www.moonsoft.es</packagerurl>
+   <description><![CDATA[]]></description>
+   <scriptfile>pkg_install.php</scriptfile>  
+   <files>
+     <file type="component" id="com_listmanager" >com_listmanager.zip</file>
+     <file type="module" id="mod_listmanager" client="site">mod_listmanager.zip</file>    
+     <file type="module" id="mod_listmanagercomp" client="site">mod_listmanagercomp.zip</file>
+     <file type="module" id="mod_listmanagersearch" client="site">mod_listmanagersearch.zip</file>
+     <file type="module" id="mod_listmanagerfilter" client="site">mod_listmanagerfilter.zip</file>
+     <file type="module" id="mod_listmanagerform" client="site">mod_listmanagerform.zip</file>
+     <file type="plugin" id="plg_listmanager">plg_listmanager.zip</file>
+   </files>
+   <updateservers>
+		<server type="extension" name="List Manager" priority="1">https://www.moonsoft.es/comp_update/listmanager.xml</server>
+	</updateservers>
+</extension>
+

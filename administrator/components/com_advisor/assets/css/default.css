@@ -1,0 +1,212 @@
+/*
+ * @component Advisor 
+ * @copyright Copyright (C) 2012 Moonsoft.  
+ * @license GPL 3.0
+ * This program is free software: you can redistribute it and/or modify it under the terms of the 
+ * GNU General Public License as published by the Free Software Foundation, either version 3 of the License, 
+ * or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+ * See the GNU General Public License for more details.
+ * See <http://www.gnu.org/licenses/>.
+ * More info www.moonsoft.es gestion@moonsoft.es 
+ */
+ 
+.ad_explain_wrapper{
+	width:99%;
+	height:180px;
+	border-style:solid;
+	border-color:#ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top:5px;
+	margin-bottom:8px;
+	background-color:#f8f8f8;
+	}
+.ad_explain_step{
+	float:left;
+	margin:5px;
+	margin-left:8px;
+	margin-right:8px;
+	border-style:solid;
+	border-color:#ccc;
+	border-width:1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:5px;
+	background-color:#ddd;
+	line-height:12px;
+	width: 14%;
+	}
+.ad_open{
+	background-color:#fff;
+	}
+.ad_current{
+	background-color:#fff;
+	}
+
+.ad_explain_step .ad_title_1{ width:126px; }
+.ad_explain_step .ad_title_2{ width:150px; }
+.ad_explain_step .ad_title_3{ width:126px; }
+.ad_explain_step .ad_title_4{ width:143px; }
+.ad_explain_step .ad_title_5{ width:126px; }
+.ad_explain_step .ad_title_6{ width:126px; }
+.ad_explain_step .ad_title{
+	font-size:1.3em;
+	font-weight:bold;
+	margin-bottom:0px;
+}
+.ad_explain_step .ad_title .ad_number{
+	height: 0px;
+	}
+.ad_explain_step .ad_title .ad_number legend{
+	line-height: 0px;
+	}
+.ad_explain_step .ad_title .ad_number_text{
+	padding-left:34px;
+	}
+.ad_explain_step .ad_content{
+	margin-top:5px;
+	color:#000;	
+	width: 150px;
+	font-size:10px;
+	text-align: center;
+	}
+.ad_explain_step .ad_status{
+	margin-top:5px;
+	color:#aaa;
+	font-size: 10px;
+	}	
+.ad_explain_step .ad_actions{
+	margin-top:5px;
+	font-size:0.85em;
+	color:#333;
+	}
+.ad_explain_step .ad_actions div{
+	float:left;	
+	height:26px;
+	line-height:26px;	
+	}
+.ad_explain_step .ad_actions img{
+	margin-left:3px;
+	margin-right:3px;
+	}
+.radio_col{
+	float:left;
+	text-align:center;
+	margin-left:7px;
+	margin-right:7px;
+	}
+.columns{
+	float:left;
+	text-align:center;
+	margin-left:5px;
+	margin-right:15px;
+	font-weight:bold;
+	padding-top: 12px;
+	}
+.columns_normal{
+	float:left;
+	text-align:center;
+	margin-left:5px;
+	margin-right:15px;
+	font-weight:bold;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top: 2px;
+	}	
+.input_normal{
+	float:left;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	}
+#chart_div table{
+	border-collapse:separate;
+	}
+button .icon-import{
+	background:url("../img/import14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	width:16px;
+	}
+.icon-flow{
+	background:url("../img/flow_back14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-step{
+	background:url("../img/step14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-product{
+	background:url("../img/product14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+.icon-solution{
+	background:url("../img/solution14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	}
+button .icon-option{
+	background:url("../img/option14x14.png") no-repeat scroll 0 0 transparent;
+	margin-bottom: -3px;
+	width:16px;
+	}
+.bg_white{
+	background-color:#fff;
+	padding:24px;
+	border-radius:8px;
+}
+.sort_both{
+	background:url("../img/sort_both.png") no-repeat scroll right center transparent;
+}
+.sort_asc{
+	background:url("../img/sort_asc.png") no-repeat scroll right center transparent;
+}
+.sort_desc{
+	background:url("../img/sort_desc.png") no-repeat scroll right center transparent;
+}
+
+#adminForm button{
+	margin:0px;
+}
+.display_values{
+	max-height:165px;
+	overflow:auto;
+}
+
+#adminForm .icon-mvmove{
+	background:url("../img/mvmove.png") no-repeat scroll center center transparent;	
+	}
+#adminForm .icon-mvremove{
+	background:url("../img/mvdelete.png") no-repeat scroll center center transparent;	
+	}
+a.tm_cmove{
+	cursor:move;
+}
+.tm_display_buttons i{
+	height: 22px;
+	width: 16px;	
+	}	
+.tm_display_buttons {
+	margin-bottom:8px;
+}
+
+div.btn-group[data-toggle=buttons-radio] button.btn_yes.active {
+    background-color: #51A351;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+div.btn-group[data-toggle=buttons-radio] button.btn_no.active {
+    background-color: #BD362F;
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.tm_order i{
+	height:15px;
+	width:15px;
+	}
+.tm_order .btn{
+	padding: 4px;
+}

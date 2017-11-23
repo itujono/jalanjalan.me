@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="hidden" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" />
+		<field name="country_name" type="text" label="COM_BOOKPRO_COUNTRY_NAME" class="inputbox"
+			size="100" required="true" />
+		<field name="country_code" type="text" label="COM_BOOKPRO_COUNTRY_CODE" class="inputbox"
+			size="100" required="true" />
+			
+		<field
+				name="flag"
+				type="media"
+				label="COM_BOOKPRO_COUNTRY_FLAG"
+				description="COM_BOOKPRO_COUNTRY_FLAG_DESC" />
+		<field
+				name="flag"
+				type="media"
+				label="COM_BOOKPRO_COUNTRY_MAP"
+				description="COM_BOOKPRO_COUNTRY_MAP_DESC"/>
+			
+		<field name="intro" type="editor" buttons="true"
+		hide="pagebreak,readmore" class="inputbox" filter="JComponentHelper::filterText"
+		label="COM_BOOKPRO_COUNTRY_INTRO" description="COM_BOOKPRO_FIELD_DESCRIPTION_DESC" />
+		
+		<field name="desc" type="editor" buttons="true"
+			hide="pagebreak,readmore" class="inputbox" filter="JComponentHelper::filterText"
+			label="JGLOBAL_DESCRIPTION" description="COM_BOOKPRO_FIELD_DESCRIPTION_DESC" />
+
+		<field name="travel_guide" type="editor" buttons="true"
+			hide="pagebreak,readmore" class="inputbox" filter="JComponentHelper::filterText"
+			label="COM_BOOKPRO_FIELD_TRAVEL_GUIDE" description="COM_BOOKPRO_FIELD_TRAVEL_GUIDE" />
+			
+		<field name="visa" type="editor" buttons="true"
+			hide="pagebreak,readmore" class="inputbox" filter="JComponentHelper::filterText"
+			label="COM_BOOKPRO_FIELD_VISA" description="COM_BOOKPRO_FIELD_VISA" />			
+
+		<field name="FAQ" type="editor" buttons="true"
+			hide="pagebreak,readmore" class="inputbox" filter="JComponentHelper::filterText"
+			label="COM_BOOKPRO_FAQS" description="COM_BOOKPRO_FAQS" />	
+
+		<field name="text_map" type="editor" buttons="true"
+			hide="pagebreak,readmore" class="inputbox" filter="JComponentHelper::filterText"
+			label="Text map" description="Text map" />
+		
+		<field name="multicountry" type="list" label="Multi Country" description="Multi Country" class="inputbox small">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+					
+		<field name="state" type="list" label="JSTATUS"
+			description="COM_BOOKPRO_STATE" class="inputbox span12 small"
+			size="1" default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+
+	</fieldset>
+
+</form>

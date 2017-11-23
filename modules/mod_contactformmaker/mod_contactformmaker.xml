@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.0" client="site" method="upgrade">
+
+  <name>Contact Form Maker Module</name>
+  <author>Web-Dorado</author>
+  <creationDate>January 2011</creationDate>
+  <copyright>Copyright (C) 2013 Web-Dorado.com All rights reserved.</copyright> 
+  <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+  <authorEmail>info@web-dorado.com</authorEmail>
+  <authorUrl>http://www.web-dorado.com/</authorUrl>
+  <version>1.0.9</version>
+  <description>Contact Form Maker is a simple tool to add slick contact forms into your Joomla website. The extension includes a number of Contact form templates, which can be edited in a manner to fit the basic needs.</description>
+
+  <files>
+    	<filename module="mod_contactformmaker">mod_contactformmaker.php</filename>
+    	<filename module="mod_contactformmaker">helper.php</filename>
+		<filename module="mod_contactformmaker">index.html</filename>
+  </files>
+  
+<config>
+ <fields name="params">
+  	<fieldset name="basic" label="Module Parameters">
+     	<field name="id" type="modal_contacts" label="Select a Form" required="true" addfieldpath="/administrator/components/com_contactformmaker/models/forms"/>
+		<field  name="moduleclass_sfx" type="text" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />			
+
+	</fieldset>
+ </fields>
+</config>
+
+</extension>
+

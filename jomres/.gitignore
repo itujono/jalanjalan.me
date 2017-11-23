@@ -1,0 +1,14 @@
+core-plugins
+uploadedimages
+temp
+/configuration.php
+sessions
+cache
+remote-plugins
+updates
+/logs/Core.application.log
+/vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Serializer/HTML/
+/remote_plugins
+desktop.ini
+/logs/.gitignore
+/language/rvhire

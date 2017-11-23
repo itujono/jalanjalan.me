@@ -1,0 +1,31 @@
+
+	<div class="alert alert-danger">https://jalanjalan.me:443/main/administrator/index.php?option=com_jomres&#38;task=site_settings</div>
+	<div class="alert alert-danger"></div>
+	<div class="alert alert-danger">2017-11-06 21:29:45 36.69.16.196 Message: <strong>SQLSTATE[HY000]: General error: 2006 MySQL server has gone away</strong></div>
+	<div class="alert alert-danger">File: /home/jalanjal/public_html/main/jomres/libraries/jomres/classes/jomres_database.class.php<br/>
+	Line: 278</div>
+	
+
+	
+	<div class="alert alert-warning"></div>
+	
+	
+	<div class="alert alert-danger">Trace: #0 /home/jalanjal/public_html/main/jomres/libraries/jomres/classes/jomres_database.class.php(278): PDO->query('SELECT `id`,`co...', 5)
+#1 /home/jalanjal/public_html/main/jomres/libraries/jomres/functions/database.php(21): jomres_database->loadObjectList()
+#2 /home/jalanjal/public_html/main/jomres/libraries/jomres/classes/jomres_countries.class.php(69): doSelectSql('SELECT `id`,`co...')
+#3 /home/jalanjal/public_html/main/jomres/libraries/jomres/functions/countries.php(77): jomres_countries->get_all_countries()
+#4 /home/jalanjal/public_html/main/jomres/core-minicomponents/j10501business_details.class.php(35): createSimpleCountriesDropdown('GB', 'cfg_business_co...')
+#5 /home/jalanjal/public_html/main/jomres/libraries/jomres/classes/mcHandler.class.php(167): j10501business_details->__construct(Array)
+#6 /home/jalanjal/public_html/main/jomres/libraries/jomres/functions/siteconfig.functions.php(358): mcHandler->triggerEvent('10501', Array)
+#7 /home/jalanjal/public_html/main/jomres/core-minicomponents/j16000site_settings.class.php(28): showSiteConfig()
+#8 /home/jalanjal/public_html/main/jomres/libraries/jomres/classes/mcHandler.class.php(227): j16000site_settings->__construct(NULL)
+#9 /home/jalanjal/public_html/main/jomres/admin.php(165): mcHandler->specificEvent('16000', 'site_settings')
+#10 /home/jalanjal/public_html/main/administrator/components/com_jomres/jomres.php(30): require_once('/home/jalanjal/...')
+#11 /home/jalanjal/public_html/main/libraries/src/Component/ComponentHelper.php(392): require_once('/home/jalanjal/...')
+#12 /home/jalanjal/public_html/main/libraries/src/Component/ComponentHelper.php(367): Joomla\CMS\Component\ComponentHelper::executeComponent('/home/jalanjal/...')
+#13 /home/jalanjal/public_html/main/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_jomres')
+#14 /home/jalanjal/public_html/main/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#15 /home/jalanjal/public_html/main/libraries/src/Application/CMSApplication.php(267): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#16 /home/jalanjal/public_html/main/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#17 {main}</div>
+	

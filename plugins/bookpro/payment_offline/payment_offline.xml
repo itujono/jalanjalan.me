@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="bookpro">
+	<name>Payment Offline</name>
+	<version>2.1</version>
+	<creationDate>Jan 2013</creationDate>
+	<author>Joombooking.com</author>
+	<authorEmail>quan@joombooking.com</authorEmail>
+	<authorUrl>http://www.joombooking.com</authorUrl>
+	<copyright>Joombooking.com</copyright>
+	<license>GNU General Public License v3 or later versions</license>
+	
+	<files>
+		<filename plugin="payment_offline">payment_offline.php</filename>
+		<filename>index.html</filename>
+		<folder>payment_offline</folder>	
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_bookpro_payment_offline.ini</language>
+	</languages>	
+	
+<config>
+	<fields name="params">
+  	  <fieldset name="basic">
+  	  <field name="display_name" type="text" size="30" default="Pay by Cash" label="Display name"/>
+  	  <field name="order_status" type="list" default="PENDING" label="Order status" description="Set order status when using this plugin" >
+          <option value="CONFIRMED">Confirmed</option>
+          <option value="PENDING">Pending</option>
+        </field>
+	</fieldset>
+  </fields>	
+</config>			
+</extension>

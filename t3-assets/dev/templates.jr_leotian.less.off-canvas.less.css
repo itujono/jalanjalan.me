@@ -1,0 +1,68 @@
+.t3-wrapper {
+  background: url("../../templates/jr_leotian/images/mainbody-bg.png") no-repeat scroll center top #f2f2f2;
+}
+.off-canvas-toggle {
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: transparent;
+}
+.off-canvas-toggle:focus {
+  outline: none;
+}
+.t3-off-canvas {
+  background: #ffffff;
+  color: #666666;
+}
+.t3-off-canvas .t3-off-canvas-header {
+  background: #eeeeee;
+  color: #666666;
+  padding: 0 0 0 12px;
+  height: 35px;
+}
+.t3-off-canvas .t3-off-canvas-header h2 {
+  margin: 0;
+  line-height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.t3-off-canvas .close {
+  margin: 0;
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  background: #bbbbbb;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.t3-off-canvas .t3-off-canvas-body {
+  padding: 24px 12px;
+}
+.t3-off-canvas .t3-off-canvas-body a {
+  color: #75c5cf;
+  text-decoration: none;
+}
+.t3-off-canvas .t3-off-canvas-body a:hover,
+.t3-off-canvas .t3-off-canvas-body a:focus {
+  color: #40aab8;
+  text-decoration: none;
+}
+.t3-off-canvas .t3-off-canvas-body a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.t3-off-canvas .t3-off-canvas-body .dropdown-menu .active a {
+  background: transparent;
+}
+.t3-off-canvas .t3-off-canvas-body .t3-module {
+  margin-bottom: 18px;
+}
+.t3-off-canvas .t3-off-canvas-body .module-title {
+  margin-bottom: 9px;
+}

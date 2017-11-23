@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="search" method="upgrade">
+<name>Search - List Manager</name>
+<creationDate>November 2017</creationDate>
+<author>Moonsoft</author>
+<authorEmail>gestion@moonsoft.es</authorEmail>
+<authorUrl>www.moonsoft.es</authorUrl>
+<copyright>Commercial</copyright>
+<license>License GPL 3.0</license>
+<version>2.5.5</version>
+<description><![CDATA[Data Search inside List Manager]]></description>
+<files>
+   <filename plugin="listmanager">listmanager.php</filename>
+</files>
+</extension>
+

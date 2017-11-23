@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>Content -Load Contact Form Maker</name>
+	<author>Web Dorado</author>
+	<creationDate>February 2012</creationDate>
+	<author>Web-Dorado</author>
+	<authorEmail>info@web-dorado.com</authorEmail>
+	<authorUrl>http://www.Web-Dorado.com</authorUrl>
+	<copyright>Copyright (C) 2013 Web-Dorado.com. All rights reserved.</copyright> 
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.0.9</version>
+	<description>	Contact Form Maker is a simple tool to add slick contact forms into your Joomla website. The extension includes a number of Contact form templates, which can be edited in a manner to fit the basic needs.
+</description>
+	<files>
+		<filename plugin="loadcontactformmaker">loadcontactformmaker.php</filename>
+		<filename plugin="loadcontactformmaker">index.html</filename>
+	</files>
+</extension>

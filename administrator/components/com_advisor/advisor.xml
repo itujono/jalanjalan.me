@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade" version="1.7"> 
+	<name>Advisor</name>
+	<creationDate>August 2017</creationDate>
+	<copyright>(C) 2017 Moonsoft</copyright>
+	<author>Moonsoft</author>
+	<authorEmail>gestion@moonsoft.es</authorEmail>
+	<authorUrl>http://components.moonsoft.es</authorUrl>
+	<license>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</license>
+	<version>0.3.1</version>
+	<description><![CDATA[
+			<p><b>Advisor</b></p>
+		]]></description>
+	
+	<!-- 1.5 -->
+  	<scriptfile>install.php</scriptfile>    
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>	
+ 
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>advisor.php</filename>
+		<filename>controller.php</filename>	
+		<filename>controller_16.php</filename>	
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+    	<folder>language</folder>
+    	<folder>layouts</folder>		
+	</files> 
+  <languages folder="site">
+			<language tag="en-GB">language/en-GB/en-GB.com_advisor.ini</language>
+		</languages> 
+	<administration>
+		<menu img="../components/com_advisor/assets/img/Advisor16x16.png">ADVISOR</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>advisor.php</filename>
+			<filename>controller.php</filename>
+			<filename>controller_16.php</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+  		<folder>assets</folder>
+  		<folder>controllers</folder>
+  		<folder>language</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_advisor.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_advisor.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
+

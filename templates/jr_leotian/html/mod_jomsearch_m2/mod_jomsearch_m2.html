@@ -1,0 +1,119 @@
+<patTemplate:tmpl name="search" unusedvars="strip">
+
+<form action="{SUBMITURL}" method="GET" name="{FORMNAME}" role="form">
+<input type="hidden" name="option" value="com_jomres" />
+
+<div class="home-search appear" data-animated="fadeInLeft" data-start="0">
+	
+	<div class="col-md-3">
+		<div class="form-group">
+			<label class="control-label" for="arrivalDate">{HARRIVALDATE}</label>
+			<div class="input-group">{ARRIVALDATE}</div>
+		</div>
+	</div>
+	
+	<div class="col-md-3">
+		<div class="form-group">
+			<label class="control-label" for="departureDate">{HDEPARTUREDATE}</label>
+			<div class="input-group">{DEPARTUREDATE}</div>
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="room_type">{JOMRES_SEARCH_RTYPES}</label>
+			{ROOM_TYPE}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="guestnumber">{HGUESTNUMBER}</label>
+			{GUESTNUMBER}
+		</div>
+	</div>
+
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label">&nbsp;</label>
+			<input type="submit" class="btn btn-info btn-block" name="send" value="{HSEARCH}" />
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+	
+</div>
+
+{HIDDEN}
+</form>
+<div class="clearfix"></div>
+
+<patTemplate:comment> 
+	
+	<!--Other output that you may want to use-->
+	
+	<!--<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="town">{JOMRES_SEARCH_GEO_TOWNSEARCH}</label>
+			{TOWN}{SELECTCOMBO_HIDDENDROPDOWNS_TOWN}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="ptype">{JOMRES_SEARCH_PTYPES}</label>
+			{PTYPE}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="guestnumber">&nbsp;</label>
+			{PROPERTYNAME}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="description">{JOMRES_SEARCH_DESCRIPTION_INFO}</label>
+			{DESCRIPTION}
+		</div>
+	</div>
+
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="country">&nbsp;</label>
+			{COUNTRY} {SELECTCOMBO_COUNTRY}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="region">&nbsp;</label>
+			{REGION} {SELECTCOMBO_HIDDENDROPDOWNS_REGION}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="pfeatures">&nbsp;</label>
+			{FEATURE}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="pricerange">{JOMRES_SEARCH_PRICERANGES}</label>
+			{PRICERANGES}
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="form-group">
+			<label class="control-label" for="stars">{HSTARS}</label>
+			{STARS}
+		</div>
+	</div>-->
+</patTemplate:comment>
+
+</patTemplate:tmpl>
